@@ -1,0 +1,24 @@
+{
+  "name": "sg-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eLn86/node.js.git"
+  },
+  "author": "EL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eLn86/node.js/issues"
+  },
+  "homepage": "https://github.com/eLn86/node.js#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0"
+  }
+}

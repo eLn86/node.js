@@ -1,0 +1,53 @@
+extends layout
+
+block content
+  header.row.header
+  h1 WDI Shop
+  .row.product
+    .col-md-2
+      h3 Name
+    .col-md-2
+      h3 Price
+    .col-md-4
+      h3 ID
+  section#cart.row
+    .col-md-12
+  section.row.total
+  h1
+  | Total: 
+  br
+  |  $
+  span#grandTotal 00.00
+  section.row.create
+  .col-md-2.name
+    .form-group
+      input.form-control(type='text', name='name', placeholder='Name')
+  .col-md-2.price
+    .form-group
+      input.form-control(type='number', name='price', min='0', placeholder='Price')
+  .col-md-2.createProduct
+    button#createButton.btn.btn-success(type='button') Create
+  .col-md-2.calc
+    button.btn.btn-info(type='button') Calculate
+  section.row.update
+  .col-md-2.name
+    .form-group
+      input.form-control(type='text', name='name', placeholder='Name')
+  .col-md-2.price
+    .form-group
+      input.form-control(type='number', name='price', min='0', placeholder='Price')
+  .col-md-2.updateProduct
+    button#updateButton.btn.btn-success(type='button') Update
+  
+  script#productRowTpl(type='text/template').
+    <div class="row product">
+    <div class="col-md-2 title">{{Name}}</div>
+    <div class="col-md-2 price">${{Price}}</div>
+    <div class="col-md-4 id">{{Id}}</div>
+    <div class="col-md-2 delete">
+    <button type="button" class="btn btn-danger">Delete</button>
+    </div>
+    </div>
+    
+block scripts
+  script(src='javascripts/main.js')
